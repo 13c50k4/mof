@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from mof.gov.kw/MOFServices/TaxFormNotKuwaitiTwo.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Feb 2020 22:46:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>A4</title>
+    <!-- Normalize or reset CSS with your favorite library -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- Load paper.css for happy printing -->
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <!-- Set page size here: A5, A4 or A3 -->
+    <!-- Set also "landscape" if you need -->
+
+    <style>
+        @page {
+            size: A4;
+        }
+
+        .txtstyle {
+            border-bottom: 1px dotted black;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+    </style>
+    <script>
+        function checkRadioButton2() {
+            if ((DealingCompany1.checked) || (DealingCompany2.checked)) {
+                check();
+            } else {
+                alert("يرجى تعبئة جميع الحقول المطلوبة");
+            }
+        }
+        function checkRadioButton1() {
+            if ((RelatedCompany1.checked) || (RelatedCompany2.checked)) {
+
+                checkRadioButton2();
+            } else {
+                alert("يرجى تعبئة جميع الحقول المطلوبة");
+            }
+        }
+
+        function ViableButton() {
+            document.getElementById("PrintB").style.display = "none";
+            Print();
+        }
+
+        function check() {
+            if ((document.getElementById("PersonName").value == "") ||
+                (document.getElementById("PersonCivilId").value == "") ||
+                (document.getElementById("CompanySuperviser").value == "") ||
+                (document.getElementById("CompanyNationalty").value == "") ||
+                (document.getElementById("CopmanyAddressTwo").value == "") ||
+                (document.getElementById("PlacedCompany").value == "") ||
+                (document.getElementById("PersonNameTwo").value == "") ||
+                (document.getElementById("Day").value == "") ||
+                (document.getElementById("Month").value == "") ||
+                (document.getElementById("Year").value == "") ||
+                (document.getElementById("PersonPosition").value == "")) {
+                alert("يرجى التأكد من ادخال جميع البيانات بصورة صحيحة");
+            } else {
+                ViableButton();
+            }
+        }
+
+        function Print() {
+            window.print();
+        }
+    </script>
+</head>
+<!-- Set "A5", "A4" or "A3" for class name -->
+<!-- Set also "landscape" if you need -->
+<body class="A4">
+    <!-- Each sheet element should have the class "sheet" -->
+    <!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+    <section class="sheet padding-10mm">
+        <form method="post" action="https://mof.gov.kw/MOFServices/TaxFormNotKuwaitiTwo.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk5MTg1NzE0NmRkmVh0VZphfO5KXPJN8K+EozSuXFUF3mAZHoDvjgc6cdA=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="11763E34" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAwj+dA3PAer4Q1xwMdkeQaEUY10PoI95uz3ZJjtxn7pHuL3PmjjzNnsVjh/euE5vTmzjogz7wtAP5L6giM6B8tAwQLPHfq/OGWvCsTeKHQHdo9wxOpSFt6Duf7Xbfat7H+okCq6ComTV44P8L5W4byKWmKevRrCEFad5RB6svwXDhGIAKESnZo/sWnV+zn679BUrcrnhD/QtWOzpEGXc2J35FlZ2bisf2XLBEwUHTZuwvAQ0pLPMmC1uag8p0/5WlwLe+IkxskYFaLOJl3zwCOyv8+sK/SLU/E256b1OlQC9Q==" />
+</div>
+            <div style="direction: rtl; text-align: right; border-style: double; padding: 20px; height: 1000px;">
+                <div style="border-style: double; border-color: #4BACC6; width: 300px; margin: 0 auto; position: absolute; margin-right: 170px">
+                   <h3 style="text-align: center;">إدارة الخضوع الضريبي والتخطيط <br />
+                        مراقبة خضوع ومتابعة الشركات الكويتية</h3>
+                </div>
+                <div style="float: right; z-index: 3">
+                    <img src="../_images/kuwaitLogoTaxThree.png" />
+                </div>
+                <div style="float: left; z-index: 3;">
+                    <img src="../_images/TaxLogoTaxThree.png" style="margin-right: 40px" />
+                </div>
+                <div style="margin-top: 128px">
+                    <h1 style="text-align: center">إقرار وتعهد</h1>
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;  &nbsp;&nbsp;أقر أنا
+                <input name="PersonName" type="text" id="PersonName" class="txtstyle" style="width:310px;" />
+                    &nbsp;&nbsp;
+                    بطاقة مدنية رقم:
+                &nbsp;<input name="PersonCivilId" type="text" id="PersonCivilId" class="txtstyle" />
+                    <br />
+                    <br />
+                    بصفتي المدير المسئول لشركة/مؤسسة
+                &nbsp;<input name="CompanySuperviser" type="text" id="CompanySuperviser" class="txtstyle" style="width:310px;" />
+                    &nbsp;&nbsp;
+                    ومقرها
+                   &nbsp;
+                    <input name="PlacedCompany" type="text" id="PlacedCompany" class="txtstyle" style="width:97px;" />
+                    <br />
+                    <br />
+                    وجنسيتها:
+                   &nbsp;
+                    <input name="CompanyNationalty" type="text" id="CompanyNationalty" class="txtstyle" />
+                    &nbsp;&nbsp;
+                    وعنوانها:
+                   &nbsp;
+                    <input name="CopmanyAddressTwo" type="text" id="CopmanyAddressTwo" class="txtstyle" style="width:330px;" />
+                    <p style="text-align: justify; line-height: 30px">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;بأن جميع البيانات التالية صحيحة وتحت مسؤوليتي، وإذا ظهر ما يخالفها أكون مسئولاً مسئولية قانونية كاملة طبقاً لأحكام القوانين
+                         19 لسنة 2000 في شأن دعم العمالة الوطنية والقانون 46 لسنة 2006 في شأن الزكاة ومساهمة الشركات المساهمة العامة والمقفلة في
+                         ميزانية الدولة، والقانون 2 لسنة 2008 في شأن ضريبة الدخل الكويتية، وعلى التفصيل التالي:
+                                        <br />
+                        <div style="margin-right: 30px">
+                            <b><u>أولاً: بشأن الشركات التي نقوم بتمثيلها / الوكالة عنها/ المشاركة فيها:</u></b>
+                            <p style="top: 0.1px;">
+                                <input type="radio" name="RelatedCompany" id="RelatedCompany1" value="ValueOne" />
+                                لا توجد وكالات.
+                            </p>
+                            <p style="top: 0.1px;">
+                                <input type="radio" name="RelatedCompany" id="RelatedCompany2" value="ValueTwo" />
+                                توجد وكالات (في حال وجود وكالة عاملة يرفق نسخة من عقد الوكالة مع عقد العمل).  
+                            </p>
+                            <b><u>ثانياً: بشأن التعاملات مع مقاولي الباطن</u></b>
+                            <p style="top: 0.1px;">
+                                <input type="radio" name="DealingCompany" id="DealingCompany1" value="ValueOne" />
+                                لا توجد.
+                            </p>
+                            <p style="top: 0.1px;">
+                                <input type="radio" name="DealingCompany" id="DealingCompany2" value="ValueTwo" />
+                                توجد (مرفق كشف بأسماء مقاولي الباطن).  
+                            </p>
+                            <b><u><span style="line-height: 30px">ثالثاً: كما أتعهد بصفتي مسئولاً عن الشركة/ المؤسسة، سالفة الذكر بالوفاء بكافة الالتزامات التي تفرضها القوانين المشار إليها بهذا الإقرار، وكذلك اللوائح والقواعد والتعليمات التنفيذية.                      
+                            </span></u></b>
+                        </div>
+
+                    </p>
+                    <h2 style="text-align: center">وهذا إقرار وتعهد مني بذلك،،، </h2>
+                    <div style="width: 50%; float: right; display: block">
+                        <table width="440px">
+                            <tr>
+                                <td colspan="2" style="border: 1px solid; height: 45px">
+                                    <span style="padding-right: 10px">الإسم:</span>
+                                    &nbsp;
+                                    <input name="PersonNameTwo" type="text" id="PersonNameTwo" class="txtstyle" style="width: 360px;" />
+                                </td>
+                            </tr>
+                            <tr height="150px;">
+                                <td style="border: 1px solid; width: 60%; padding-right: 10px">الصفة: 
+                                    &nbsp;
+                                    <input name="PersonPosition" type="text" id="PersonPosition" class="txtstyle" style="width: 190px;" />
+                                    <p style="top: 50%;">
+                                        التوقيع:
+                                    </p>
+                                </td>
+                                <td style="border: 1px solid; width: 40%;">
+
+                                    <span style="margin-left: 40%; margin-right: 40%;">التاريخ:</span>
+                                    <br />
+                                    <br />
+                                    <div style="margin-left: 8%; margin-right: 8%">
+                                        <input name="Day" type="text" id="Day" class="txtstyle" style="width:30px;text-align: center" />/<input name="Month" type="text" id="Month" class="txtstyle" style="width:30px;text-align: center" />/<input name="Year" type="text" id="Year" class="txtstyle" style="width:60px;text-align: center" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width: 30%; float: left; border: 1px solid; height: 200px; display: block">
+                        <h2 style="text-align: center;">الختـــم </h2>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <button id="PrintB" style="margin-right: 530px; margin-top: 13px; height: 26px; width: 108px" onclick="checkRadioButton1()">طبــاعة</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+<!-- Mirrored from mof.gov.kw/MOFServices/TaxFormNotKuwaitiTwo.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Feb 2020 22:46:48 GMT -->
+</html>
